@@ -1,0 +1,96 @@
+@keyframes blink {
+    0%, 49.9% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+#red-light.blinking {
+    animation: blink 1.2s infinite steps(1, end);
+}
+
+#green-light.blinking {
+    animation: blink 1.8s infinite steps(1, end);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#hud {
+    position: absolute;
+    bottom: 1%;
+    right: 23%; 
+    width: 230px;
+    height: auto;
+}
+
+#hud img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#batt-symbol {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#red-light {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#green-symbol {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#ready-symbol {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#rec-symbol {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#saving-symbol {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#starting-symbol {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Axon UI Styles */
+#axonOverlay {
+    position: fixed !important;
+    top: 10px !important;
+    right: 10px !important;
+    z-index: 999999 !important;
+    pointer-events: none !important;
+}
