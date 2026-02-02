@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-author 'Mike P, Thicc Mike Mods'
+author 'Pizzakaufen'
 description 'Super spec bodycam'
 version '0.1.1'
 
@@ -29,4 +29,5 @@ client_scripts {
 server_scripts {
     'config.lua',
     'sv_bodycam.lua'
+
 }
